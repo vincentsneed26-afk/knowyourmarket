@@ -1,0 +1,39 @@
+/* Know Your Market — book-a-demo */
+*{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:#13172e}
+  ::selection{background:#BB1467;color:#fff}
+  a{text-decoration:none}
+  .kym-field input,.kym-field select,.kym-field textarea{
+    width:100%;background:rgba(255,255,255,.04);border:1.5px solid rgba(255,255,255,.14);
+    border-radius:10px;padding:16px 18px;font:500 16px/1.4 Montserrat,sans-serif;color:#fff;
+    transition:border-color .2s ease,background .2s ease,box-shadow .2s ease;outline:none;
+  }
+  .kym-field textarea{resize:vertical;min-height:130px}
+  .kym-field input::placeholder,.kym-field textarea::placeholder{color:rgba(255,255,255,.34)}
+  .kym-field select{appearance:none;-webkit-appearance:none;cursor:pointer;padding-right:48px;}
+  .kym-select-wrap{position:relative;}
+  .kym-select-wrap > svg{position:absolute;right:18px;top:50%;transform:translateY(-50%);pointer-events:none;}
+  .kym-field select option{color:#1C2143;background:#fff}
+  .kym-field input:focus,.kym-field select:focus,.kym-field textarea:focus{
+    border-color:#BB1467;background:rgba(187,20,103,.06);box-shadow:0 0 0 4px rgba(187,20,103,.16);}
+  .kym-field.kym-invalid input,.kym-field.kym-invalid select,.kym-field.kym-invalid textarea{
+    border-color:#FF5470;background:rgba(255,84,112,.07);}
+  .kym-field.kym-invalid input:focus,.kym-field.kym-invalid select:focus,.kym-field.kym-invalid textarea:focus{
+    box-shadow:0 0 0 4px rgba(255,84,112,.16);}
+  .kym-err{display:flex;align-items:center;gap:7px;margin-top:9px;font:600 13.5px/1.3 Montserrat,sans-serif;color:#FF7488;
+    max-height:0;opacity:0;overflow:hidden;transition:max-height .25s ease,opacity .25s ease,margin .25s ease;margin-top:0;}
+  .kym-field.kym-invalid .kym-err{max-height:40px;opacity:1;margin-top:9px;}
+
+  @media (max-width:1180px){
+    .kym-demo-wrap{width:100%!important;padding-left:48px!important;padding-right:48px!important}
+    .kym-demo-grid{grid-template-columns:1fr!important;gap:0!important}
+    .kym-demo-aside{border-left:0!important;border-top:1px solid rgba(255,255,255,.12)!important;
+      margin-top:48px!important;padding-top:48px!important;padding-left:0!important}
+  }
+  @media (max-width:680px){
+    .kym-demo-wrap{padding:28px 20px 56px!important}
+    .kym-demo-h1{font-size:34px!important}
+    .kym-row2{grid-template-columns:1fr!important;gap:0!important}
+    .kym-submit{width:100%!important;justify-content:center!important}
+    .kym-card{padding:32px 22px!important}
+  }

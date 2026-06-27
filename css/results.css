@@ -1,0 +1,35 @@
+/* Know Your Market — results */
+*{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  html,body{margin:0;padding:0;background:#ffffff}
+  ::selection{background:#BB1467;color:#fff}
+  a{text-decoration:none}
+  @media (max-width:1799px){
+    .kym-root{width:100%!important}
+    .kym-header,.kym-bleed{width:100%!important}
+    .kym-container,.kym-nav-inner{width:100%!important;max-width:1600px!important;padding-left:40px!important;padding-right:40px!important}
+  }
+  @media (max-width:1080px){
+    .kym-grid3{grid-template-columns:repeat(2,1fr)!important}
+    .kym-stats-grid{grid-template-columns:repeat(2,1fr)!important}
+    .kym-feat{grid-template-columns:1fr!important;gap:40px!important}
+    .kym-cta-inner{flex-direction:column!important;align-items:flex-start!important;gap:30px!important}
+    .kym-foot-grid{grid-template-columns:1fr 1fr!important;row-gap:40px!important}
+  }
+  @media (max-width:720px){
+    .kym-container,.kym-nav-inner{padding-left:20px!important;padding-right:20px!important}
+    .kym-navlinks{display:none!important}
+    .kym-burger{display:flex!important}
+    .kym-mobile-menu.kym-open{display:flex!important}
+    .kym-hero-h1{font-size:36px!important}
+    .kym-sec-h2{font-size:30px!important}
+    .kym-grid3{grid-template-columns:1fr!important}
+    .kym-stats-grid{grid-template-columns:1fr!important}
+    .kym-stats-grid > div{padding:26px 0!important;border-right:0!important;border-top:1px solid rgba(255,255,255,.12)!important}
+    .kym-pagehero-inner{padding-top:64px!important;padding-bottom:56px!important}
+    .kym-cta-inner{padding:40px 24px!important}
+    .kym-cta-inner h2{font-size:32px!important}
+    .kym-cta-btn{width:100%!important;justify-content:center!important}
+    .kym-foot-grid{grid-template-columns:1fr!important;gap:34px!important}
+    .kym-foot-bottom{flex-direction:column!important;align-items:flex-start!important;gap:16px!important}
+  }
