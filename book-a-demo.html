@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book a Demo — Know Your Market</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/book-a-demo.css">
+</head>
+<body>
+<div style="min-height:100vh;width:100%;background:radial-gradient(1200px 600px at 78% -8%,rgba(187,20,103,.22),transparent 60%),linear-gradient(180deg,#1C2143 0%,#15182f 60%,#13172e 100%);font-family:Montserrat,system-ui,sans-serif;color:#fff;overflow-x:hidden;">
+  <div style="position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(135deg,rgba(255,255,255,.03) 0px,rgba(255,255,255,.03) 1.5px,transparent 1.5px,transparent 13px);"></div>
+
+  <div class="kym-demo-wrap" style="position:relative;width:1100px;margin:0 auto;padding:40px 0 88px;">
+
+    <!-- top bar -->
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:56px;">
+      <a href="index.html" style="display:flex;align-items:center;">
+        <img src="assets/logo-white.svg" alt="Know Your Market" style="height:46px;display:block;">
+      </a>
+      <a href="index.html" style="display:inline-flex;align-items:center;gap:9px;font:600 15px/1 Montserrat,sans-serif;color:rgba(255,255,255,.7);" style-hover="color:#fff">
+        <span style="font-size:17px;line-height:0;">←</span> Back to site
+      </a>
+    </div>
+
+    <div class="kym-demo-grid" style="display:grid;grid-template-columns:1fr 360px;gap:72px;align-items:start;">
+
+      <!-- ===== FORM ===== -->
+      <div>
+        <div style="display:inline-flex;align-items:center;gap:10px;margin-bottom:22px;">
+          <span style="width:30px;height:3px;background:#BB1467;display:block;"></span>
+          <span style="font:700 13px/1 Montserrat,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#FF5C9D;">Book a Demo</span>
+        </div>
+        <h1 class="kym-demo-h1" style="margin:0;font:800 46px/1.08 Montserrat,sans-serif;letter-spacing:-0.02em;color:#fff;">Let's show you the insight.</h1>
+        <p style="margin:18px 0 40px;max-width:520px;font:400 18px/1.65 Montserrat,sans-serif;color:rgba(255,255,255,.66);">Tell us a little about your business and what you'd like to understand. We'll be in touch within one working day to arrange your walkthrough.</p>
+
+        <div class="kym-card" style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.10);border-radius:20px;padding:40px 38px;">
+          <form id="kym-demo-form" novalidate>
+
+            <div id="kym-success" style="display:none;">
+              <div style="display:flex;align-items:flex-start;gap:16px;background:rgba(14,203,129,.10);border:1px solid rgba(14,203,129,.4);border-radius:14px;padding:22px 24px;">
+                <span style="flex:none;width:30px;height:30px;border-radius:50%;background:#0ECB81;display:flex;align-items:center;justify-content:center;margin-top:1px;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0c1c14" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+                </span>
+                <div>
+                  <div style="font:700 19px/1.3 Montserrat,sans-serif;color:#fff;">Thanks — your request is in.</div>
+                  <div style="margin-top:6px;font:400 15px/1.6 Montserrat,sans-serif;color:rgba(255,255,255,.66);">A member of the Know Your Market team will be in touch within one working day.</div>
+                </div>
+              </div>
+            </div>
+
+            <div id="kym-form-fields">
+            <div>
+              <div class="kym-field" id="f-name" style="margin-bottom:22px;">
+                <label for="name" style="display:block;font:600 14px/1 Montserrat,sans-serif;color:rgba(255,255,255,.8);margin-bottom:10px;">Name <span style="color:#FF5C9D;">*</span></label>
+                <input id="name" name="name" type="text" placeholder="Your full name" autocomplete="name">
+                <div class="kym-err"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v5M12 16.5v.01"></path></svg><span>Please enter your name.</span></div>
+              </div>
+
+              <div class="kym-row2" style="display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-bottom:22px;">
+                <div class="kym-field" id="f-email">
+                  <label for="email" style="display:block;font:600 14px/1 Montserrat,sans-serif;color:rgba(255,255,255,.8);margin-bottom:10px;">Email <span style="color:#FF5C9D;">*</span></label>
+                  <input id="email" name="email" type="email" placeholder="you@company.com" autocomplete="email">
+                  <div class="kym-err"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v5M12 16.5v.01"></path></svg><span>Please enter your email.</span></div>
+                </div>
+                <div class="kym-field" id="f-phone">
+                  <label for="phone" style="display:block;font:600 14px/1 Montserrat,sans-serif;color:rgba(255,255,255,.8);margin-bottom:10px;">Telephone <span style="color:#FF5C9D;">*</span></label>
+                  <input id="phone" name="phone" type="tel" placeholder="07000 000000" autocomplete="tel">
+                  <div class="kym-err"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v5M12 16.5v.01"></path></svg><span>Please enter a contact number.</span></div>
+                </div>
+              </div>
+
+              <div class="kym-field" id="f-interest" style="margin-bottom:22px;">
+                <label for="interest" style="display:block;font:600 14px/1 Montserrat,sans-serif;color:rgba(255,255,255,.8);margin-bottom:10px;">I am interested in <span style="color:#FF5C9D;">*</span></label>
+                <div class="kym-select-wrap">
+                  <select id="interest" name="interest">
+                    <option value="" disabled="disabled" selected="selected">Select a service…</option>
+                    <option value="Mystery Shopper">Mystery Shopper</option>
+                    <option value="Data Analysis">Data Analysis</option>
+                    <option value="Customer Journeys">Customer Journeys</option>
+                  </select>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
+                </div>
+                <div class="kym-err"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v5M12 16.5v.01"></path></svg><span>Please choose what you're interested in.</span></div>
+              </div>
+
+              <div class="kym-field" id="f-message" style="margin-bottom:30px;">
+                <label for="message" style="display:block;font:600 14px/1 Montserrat,sans-serif;color:rgba(255,255,255,.8);margin-bottom:10px;">Message <span style="color:rgba(255,255,255,.4);font-weight:500;">(optional)</span></label>
+                
+                <textarea id="message" name="message" placeholder="Tell us a little about your business and what you'd like to learn…"></textarea><div class="kym-err"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v5M12 16.5v.01"></path></svg><span>Please add a short message.</span></div>
+              </div>
+
+              <button type="submit" class="kym-submit" style="display:inline-flex;align-items:center;gap:11px;background:#BB1467;color:#fff;font:700 17px/1 Montserrat,sans-serif;padding:19px 38px;border:0;border-radius:10px;cursor:pointer;transition:background .2s ease;" style-hover="background:#d11876">
+                Submit <span style="font-size:19px;line-height:0;">→</span>
+              </button>
+              <p style="margin:16px 0 0;font:400 13.5px/1.5 Montserrat,sans-serif;color:rgba(255,255,255,.5);">By clicking submit I agree to the <a href="#" style="color:rgba(255,255,255,.78);text-decoration:underline;text-underline-offset:2px;" style-hover="color:#fff">terms and conditions</a>.</p>
+            </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+      <!-- ===== REASONS ASIDE ===== -->
+      <aside class="kym-demo-aside" style="border-left:1px solid rgba(255,255,255,.12);padding-left:48px;">
+        <div style="font:700 13px/1 Montserrat,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#FF5C9D;margin-bottom:26px;">Why book a demo</div>
+
+        <div style="display:flex;flex-direction:column;gap:30px;">
+          <div style="display:flex;gap:18px;">
+            <div style="flex:none;width:46px;height:46px;border-radius:13px 13px 13px 4px;background:rgba(187,20,103,.18);display:flex;align-items:center;justify-content:center;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF5C9D" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="m21 21-4.3-4.3"></path></svg>
+            </div>
+            <div>
+              <div style="font:700 18px/1.3 Montserrat,sans-serif;color:#fff;">See your real customer experience</div>
+              <p style="margin:7px 0 0;font:400 15px/1.6 Montserrat,sans-serif;color:rgba(255,255,255,.62);">Watch how mystery visits, calls and online enquiries are scored against your own standards.</p>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:18px;">
+            <div style="flex:none;width:46px;height:46px;border-radius:13px 13px 13px 4px;background:rgba(187,20,103,.18);display:flex;align-items:center;justify-content:center;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF5C9D" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 L9 11 L13 14 L20 5"></path><path d="M20 9 V5 H16"></path></svg>
+            </div>
+            <div>
+              <div style="font:700 18px/1.3 Montserrat,sans-serif;color:#fff;">Insight in six weeks or less</div>
+              <p style="margin:7px 0 0;font:400 15px/1.6 Montserrat,sans-serif;color:rgba(255,255,255,.62);">From brief to themed, actionable reporting — we'll show you the typical turnaround live.</p>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:18px;">
+            <div style="flex:none;width:46px;height:46px;border-radius:13px 13px 13px 4px;background:rgba(187,20,103,.18);display:flex;align-items:center;justify-content:center;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF5C9D" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20 V10"></path><path d="M10 20 V4"></path><path d="M16 20 V13"></path><path d="M22 20 H2"></path></svg>
+            </div>
+            <div>
+              <div style="font:700 18px/1.3 Montserrat,sans-serif;color:#fff;">Benchmarked against your market</div>
+              <p style="margin:7px 0 0;font:400 15px/1.6 Montserrat,sans-serif;color:rgba(255,255,255,.62);">Understand exactly where you stand versus the competition, not just against yourself.</p>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:18px;">
+            <div style="flex:none;width:46px;height:46px;border-radius:13px 13px 13px 4px;background:rgba(187,20,103,.18);display:flex;align-items:center;justify-content:center;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF5C9D" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 8 8 10 4.5-2 8-5 8-10V6z"></path><path d="m9 12 2 2 4-4"></path></svg>
+            </div>
+            <div>
+              <div style="font:700 18px/1.3 Montserrat,sans-serif;color:#fff;">Trusted by leading brands</div>
+              <p style="margin:7px 0 0;font:400 15px/1.6 Montserrat,sans-serif;color:rgba(255,255,255,.62);">From estate agency to storage and beyond — with a 98% year-on-year retention rate.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:38px;padding-top:30px;border-top:1px solid rgba(255,255,255,.12);">
+          <div style="font:800 34px/1 Montserrat,sans-serif;color:#fff;">6 <span style="font-size:18px;color:#FF5C9D;">wks</span></div>
+          <div style="margin-top:8px;font:600 14px/1.4 Montserrat,sans-serif;color:rgba(255,255,255,.6);">Average time from brief to insight.</div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</div>
+<script src="js/site.js"></script>
+</body>
+</html>
